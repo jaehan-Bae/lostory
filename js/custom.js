@@ -38,9 +38,11 @@ $(function () {
   // instar-slick
   $('.best-slide').slick({
     centerMode: true,
-    centerPadding: '60px',
+    centerPadding: '1px',
     slidesToShow: 8,
-    autoplaySpeed: 2000
+    autoplay:true,
+    autoplaySpeed: 2000,
+    responsive: true
   });
 
 });

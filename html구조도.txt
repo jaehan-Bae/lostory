@@ -28,16 +28,15 @@ header
       .common-title
     .talk-bottom
       .talk-left
-        .talk-bodrd
+        .talk-board
           .talk-s-title
-            .talk-list > (a*8)
+          .talk-list > (a*8)
 
       .talk-right
         .talk-s-title
-          .talk-con
-            .talk-con-inner
-              .talk-con-top
-                > img, span
-              .talk-con-bottom > p, span
+        .talk-con
+          .talk-con-inner
+            .talk-con-top > img, span
+            .talk-con-bottom > p, span
 
     
