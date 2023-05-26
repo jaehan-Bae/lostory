@@ -336,9 +336,20 @@ header {
 .talk-con-inner {
   padding: 20px;
 }
-.talk-con-top {}
-.talk-con-top img {}
-.talk-con-top span {}
+.talk-con-top {
+  display: flex;
+  flex-direction: column;
+}
+.talk-con-top img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.talk-con-top span {
+  font-weight: bold;
+  font-size: 16px;
+}
 .talk-con-bottom {}
 .talk-con-bottom p {}
 .talk-con-bottom span {}
