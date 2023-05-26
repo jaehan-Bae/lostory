@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- jQuery CDN -->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <!-- Slick Slider -->
+  <link rel="stylesheet" href="./js/slick/slick-theme.css">
+  <link rel="stylesheet" href="./js/slick/slick.css">
+  <script src="./js/slick/slick.min.js"></script>
   <!-- TypeIt -->
   <script src="js/typeit.min.js"></script>
   <!-- Custom JS & CSS -->
@@ -13,39 +18,110 @@
   <script src="./js/custom.js"></script>
   <title>lostory-website</title>
 </head>
-  <header>
-    <div class="header-inner">
-      <div class="logo">
-        <img src="./image/logo.png" alt="">
-      </div>
-      <div class="gnb">
-        <a href="#">플랫폼 인기작</a>
-        <a href="#">베스트셀러</a>
-        <a href="#">작품찾기</a>
-        <a href="#">소모임</a>
-        <a href="#">베스트리뷰</a>
-        <a href="#">클래스</a>
-        <a href="#">프리미엄</a>
+<header>
+  <div class="header-inner">
+    <div class="logo">
+      <img src="./image/logo.png" alt="">
+    </div>
+    <div class="gnb">
+      <a href="#">플랫폼 인기작</a>
+      <a href="#">베스트셀러</a>
+      <a href="#">작품찾기</a>
+      <a href="#">소모임</a>
+      <a href="#">베스트리뷰</a>
+      <a href="#">클래스</a>
+      <a href="#">프리미엄</a>
+    </div>
+  </div>
+</header>
+
+<!-- ################## Section: welcome ################## -->
+<section class="welcome">
+  <div class="welcome-inner">
+    <div class="welcome-img">
+      <img src="./image/main-img1.png" alt="">
+      <div class="welcome-title">
+        <span>그 소설 있잖아! 기억날 것 같은데...</span>
+        <h1>
+          Here is your<br>
+          <em id="typing"></em>
+        </h1>
+        <p>당신이 찾고 있던 그 이야기, 로스토리에서 찾아드립니다.</p>
+        <button>작품 찾기</button>
+        <button>어플 바로가기</button>
       </div>
     </div>
-  </header>
-  <div class="welcome">
-    <div class="welcome-inner">
-      <div class="welcome-img">
-        <img src="./image/main-img1.png" alt="">
-        <div class="welcome-title">
-          <span>그 소설 있잖아! 기억날 것 같은데...</span>
-          <h1>
-            Here is your<br>
-            <em id="typing"></em>
-          </h1>
-          <p>당신이 찾고 있던 그 이야기, 로스토리에서 찾아드립니다.</p>
-          <button>작품 찾기</button>
-          <button>어플 바로가기</button>
+  </div>
+</section>
+
+<!-- ################## Section: plaform ################## -->
+<section>
+  <div class="platform">
+    <div class="platform-inner">
+      <div class="platform-top">
+        <div class="common-title">
+          <h1>✨플래폼별 인기작✨</h1>
+        </div>
+      </div>
+      <div class="platform-bottom">
+        <div class="platform-btns">
+          <span class="active" data-alt="kakao">KAKAO</span>
+          <span data-alt="series">SERIES</span>
+          <span data-alt="ridi">RIDI</span>
+        </div>
+        <div class="platform-slide active" id="kakao">
+          <img src="./image/kakao/kakao1.jpg" alt="">
+          <img src="./image/kakao/kakao2.jpg" alt="">
+          <img src="./image/kakao/kakao3.jpg" alt="">
+          <img src="./image/kakao/kakao4.jpg" alt="">
+          <img src="./image/kakao/kakao5.jpg" alt="">
+        </div>
+        <div class="platform-slide" id="series">
+          <img src="./image/series/series.jpg" alt="">
+          <img src="./image/series/series2.jpeg" alt="">
+          <img src="./image/series/series3.jpg" alt="">
+          <img src="./image/series/series4.jpg" alt="">
+          <img src="./image/series/series5.jpg" alt="">
+        </div>
+        <div class="platform-slide" id="ridi">
+          <img src="./image/ridi/ridi1.jpg" alt="">
+          <img src="./image/ridi/ridi2.jpg" alt="">
+          <img src="./image/ridi/ridi3.jpg" alt="">
+          <img src="./image/ridi/ridi4.jpg" alt="">
+          <img src="./image/ridi/ridi5.jpg" alt="">
         </div>
       </div>
     </div>
   </div>
+</section>
+
+<!-- ################## Section: best ################## -->
+<section class="best">
+  <div class="best-inner">
+    <div class="best-top">
+      <div class="common-title">
+        <h1>✨로스토리 회원추천 베스트셀러✨</h1>
+      </div>
+    </div>
+    <div class="best-bottom">
+      <div class="best-slide">
+        <img src="./image/best/best1.jpg" alt="">
+        <img src="./image/best/best2.jpg" alt="">
+        <img src="./image/best/best3.jpg" alt="">
+        <img src="./image/best/best4.jpg" alt="">
+        <img src="./image/best/best5.jpg" alt="">
+        <img src="./image/best/best6.jpg" alt="">
+        <img src="./image/best/best7.jpg" alt="">
+        <img src="./image/best/best8.jpg" alt="">
+        <img src="./image/best/best9.jpg" alt="">
+        <img src="./image/best/best10.jpg" alt="">
+        <img src="./image/best/best11.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <body>
 
 </body>

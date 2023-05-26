@@ -1,0 +1,43 @@
+header
+  .header-inner
+    .gnb > (a * 7)
+
+.welcome
+  .welcome-inner
+    .welcome-img
+      .welcome-title
+
+.platform
+  .platform-inner
+    .platform-top
+      .common-title
+    .platform-bottom
+      .platform-btns > (span * 3)
+      .platform-slide > (img * 5)
+
+.best
+  .best-inner
+    .best-top
+      .common-title
+    .best-bottom
+      .best-slide > (img * 11)
+
+.talk
+  .talk-inner
+    .talk-top
+      .common-title
+    .talk-bottom
+      .talk-left
+        .talk-bodrd
+          .talk-s-title
+            .talk-list > (a*8)
+
+      .talk-right
+        .talk-s-title
+          .talk-con
+            .talk-con-inner
+              .talk-con-top
+                > img, span
+              .talk-con-bottom > p, span
+
+    

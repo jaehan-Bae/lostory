@@ -1,8 +1,0 @@
-header
-  .header-inner
-    .gnb > a * 7
-
-.welcome
-  .welcome-inner
-    .welcome-img
-      .welcome-title
