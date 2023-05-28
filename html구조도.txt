@@ -39,4 +39,23 @@ header
             .talk-con-top > img, span
             .talk-con-bottom > p, span
 
-    
+.gather
+  .gather-inner
+    .gather-top
+      .common-title
+    .gather-bottom
+      .gather-contents
+        .gather-con
+          .gather-img > img
+          .gather-title
+          .gather-s-title
+          .gather-hash
+
+.review
+  .review-inner
+    .review-left
+      .review-b-img > img
+        .review-b-title
+    .review-right
+      .review-s-img > img > span
+      .review-s-title

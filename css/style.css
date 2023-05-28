@@ -158,7 +158,9 @@ header {
   line-height: 1.2em;
   padding: 40px 0;
 }
-
+.welcome-title h4 {
+  color: #f86874;
+}
 .welcome-title p {
   font-size: 18px;
 }
@@ -250,6 +252,8 @@ header {
 /* ====== Section: best ======  */
 .best {
   text-align: center;
+  background-color: rgba(242, 207, 207, 0.77);
+  height: 350px;
 }
 
 .best-inner {
@@ -320,7 +324,13 @@ header {
   font-weight: bold;
   color: #f86874;
 }
-.talk-list a {}
+.talk-list p {
+  line-height: 25px;
+}
+.talk-list p:hover {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
 .talk-right {
   width: 60%;
 }
@@ -329,9 +339,15 @@ header {
   display: flex;
 }
 .talk-con {
-  border: 1px solid #000;
+  border: 1px solid #ccc;
   margin-right: 20px;
   text-align: center;
+}
+.talk-con:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.197);
+  transform: translateY(-5px);
+  text-decoration-line: underline;
 }
 .talk-con-inner {
   padding: 20px;
@@ -339,6 +355,8 @@ header {
 .talk-con-top {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .talk-con-top img {
   width: 80px;
@@ -349,7 +367,183 @@ header {
 .talk-con-top span {
   font-weight: bold;
   font-size: 16px;
+  padding: 10px 0 20px 0;
 }
 .talk-con-bottom {}
-.talk-con-bottom p {}
-.talk-con-bottom span {}
+.talk-con-bottom p {
+  margin-bottom: 10px;
+}
+.talk-con-bottom span:first-child {
+  color: #f86874;
+  font-weight: bold;
+}
+.talk-con-bottom span:last-child {
+  color: rgb(7, 7, 125);
+  font-weight: bold;
+}
+
+/* ====== Section: gather ======  */
+.gather {
+  height: 650px;
+  background-color: #ECECEC;
+}
+.gather-inner {
+}
+.gather-top {}
+.common-title {}
+.gather-bottom {
+}
+.gather-contents {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+.gather-con {
+  transition: 1s;
+}
+.gather-con:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  box-shadow:0 5px 20px rgba(0, 0, 0, 0.8);
+  background-color: #fff;
+}
+.gather-img {
+  width: 300px;
+  height: 300px;
+}
+.gather-img img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: top;
+}
+.gather-title {
+  font-size: 22px;
+  padding: 20px 0;
+  font-weight: bold;
+  text-align: center;
+}
+.gather-desc {
+  padding: 10px;
+}
+.gather-s-title {}
+.gather-hash {
+  color: rgb(7, 7, 125);
+}
+
+/* ====== Section: review ======  */
+.review {
+  height: 600px;
+}
+.review-inner {
+  margin: 50px;
+}
+.review-inner > div {
+}
+.review-left {
+  float: left;
+  width: 35%;
+}
+.review-content {
+  position: relative;
+  width: 100%;
+  width: 350px;
+  height: 400px;
+  cursor: pointer;
+}
+.review-b-img::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #22222278;
+  transition: .5s;
+}
+.review-b-img {
+  width: 350px;
+  height: 400px;
+}
+.review-b-img:hover:before {
+  margin-right: 30px;
+  background-color: #222222b2;
+}
+.review-b-img img{
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.review-b-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  width: 75%;
+}
+.review-b-title h1 {
+  font-size: 26px;
+}
+.review-contents {
+  justify-content: center;
+}
+.review-contents > div {
+  display: inline-block;
+}
+.review-right {
+  margin-left: 10px;
+}
+.review-s-img {
+  position: relative;
+  overflow: hidden;
+}
+.review-s-img img {
+  width: 200px;
+  transition: .55s;
+}
+.review-s-img img:hover {
+  transform: scale(1.1);
+}
+.badge {
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  color: #fff;
+  padding: 2px 10px;
+}
+.badge.red {
+  background-color: #f86874;
+}
+.badge.blue {
+  background-color: rgb(7, 7, 125);
+}
+.review-con {
+  cursor: pointer;
+  margin-right: 20px;
+}
+.review-con:hover {
+  
+}
+.review-con:nth-child(3) {
+  margin-right: none;
+}
+.review-s-title {
+  width: 180px;
+  height: 180px;
+  font-size: 12px;
+  overflow: hidden;
+  padding: 5px;
+}
+.review-s-title h2 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.review-s-title p {
+  line-height: 1.5em;
+}
