@@ -438,8 +438,6 @@ header {
 .review-inner {
   margin: 50px;
 }
-.review-inner > div {
-}
 .review-left {
   float: left;
   width: 35%;
@@ -484,6 +482,7 @@ header {
 }
 .review-b-title h1 {
   font-size: 26px;
+  margin-bottom: 10px;
 }
 .review-contents {
   justify-content: center;
@@ -546,4 +545,129 @@ header {
 }
 .review-s-title p {
   line-height: 1.5em;
+}
+
+/* ====== Section: community ======  */
+.community {
+  height: 650px;
+}
+.community-inner {
+  margin: 100px;
+}
+.community-left {
+  float: left;
+  width: 60%;
+  height: 600px;
+  margin-top: 100px;
+}
+.community-title {
+  font-size: 34px;
+  line-height: 1.5em;
+}
+.community-title span {
+  color: #f86874;
+}
+.community-desc {
+  font-size: 18px;
+  width: 600px;
+  line-height: 1.7em;
+  color: #333333;
+  margin: 20px 0;
+}
+.community-btn {
+  cursor: pointer;
+}
+.community-right img {
+  width: 300px;
+  cursor: pointer;
+}
+
+/* ====== Section: event ======  */
+.event {
+  height: 300px;
+  background-color: #F5DADA;
+}
+.event-inner {
+  padding: 30px 50px;
+}
+.event-left {
+  float: left;
+  margin-right: 100px;
+}
+.event-left h1 {}
+.event-tabs {
+  display: flex;
+  margin-top: 20px;
+}
+.event-tab {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.event-tab.active {
+  font-weight: bold;
+  color: rgb(2, 2, 38);
+}
+.event-tab img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
+.event-tab p {
+}
+.event-desc {
+  display: none;
+  visibility: hidden;
+}
+.event-desc.active {
+  display: block;
+  visibility: visible;
+}
+.event-desc h2 {
+  margin: 50px 0 30px 0;
+  font-size: 32px;
+}
+.event-desc p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* ====== Section: service ======  */
+.service {
+  height: 800px;
+}
+.common-title {
+}
+.service-inner {
+  padding: 0 50px;
+}
+.service-inner > div {
+  float: left;
+  width: 50%;
+}
+.service-left {}
+.service-boxes {}
+.service-box {
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.service-title {
+  /* color: #F5DADA; */
+  color: #f86874;
+  font-size: 18px;
+}
+.service-box.active {
+  border: 2px solid #F5DADA;
+  display: block;
+  visibility: visible;
+}
+.service-desc {
+  margin-top: 15px;
+  display: none;
 }

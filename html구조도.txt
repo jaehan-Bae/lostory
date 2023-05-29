@@ -2,12 +2,12 @@ header
   .header-inner
     .gnb > (a * 7)
 
-.welcome
+section.welcome
   .welcome-inner
     .welcome-img
       .welcome-title
 
-.platform
+section.platform
   .platform-inner
     .platform-top
       .common-title
@@ -15,14 +15,14 @@ header
       .platform-btns > (span * 3)
       .platform-slide > (img * 5)
 
-.best
+section.best
   .best-inner
     .best-top
       .common-title
     .best-bottom
       .best-slide > (img * 11)
 
-.talk
+section.talk
   .talk-inner
     .talk-top
       .common-title
@@ -39,7 +39,7 @@ header
             .talk-con-top > img, span
             .talk-con-bottom > p, span
 
-.gather
+section.gather
   .gather-inner
     .gather-top
       .common-title
@@ -51,7 +51,7 @@ header
           .gather-s-title
           .gather-hash
 
-.review
+section.review
   .review-inner
     .review-left
       .review-b-img > img
@@ -59,3 +59,34 @@ header
     .review-right
       .review-s-img > img > span
       .review-s-title
+
+section.community
+  .community-inner
+    .community-left
+      .community-title
+      .community-desc
+      .community-btn > (img*2)
+    .community-right > img
+
+section.event
+  .event-inner
+    .event-left
+      h1
+      .event-tabs
+        .event-tab > img,p
+    .event-right
+      .event-desc > h2,p
+
+  .section.service
+    .common-title
+    .service-inner
+      .service-left
+        .service-boxes
+          .service-box
+            .service-title
+            .service-desc
+      .service-right
+        .service-img > img
+          h2
+          p
+          .service-btn

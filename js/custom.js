@@ -8,14 +8,6 @@ $(function () {
     }
   });
 
-  $('.portfolio-item').click(function () {
-    $(this).addClass('active');
-    $(this).siblings().removeClass('active');
-
-    $('.portfolio-contents').removeClass('active');
-    $('#' + $(this).attr('data-alt')).addClass('active');
-  });
-
   // platform-slide
   $('.platform-btns span').click(function () {
     $(this).addClass('active');
@@ -35,7 +27,7 @@ $(function () {
     loop: true
   });
 
-  // instar-slick
+  // best-slick
   $('.best-slide').slick({
     centerMode: true,
     centerPadding: '1px',
@@ -43,6 +35,25 @@ $(function () {
     autoplay:true,
     autoplaySpeed: 2000,
     responsive: true
+  });
+
+  // event-tab
+  $('.event-tab').click(function(){
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+
+    $('.event-desc').removeClass('active');
+    $('#' + $(this).attr('data-alt')).addClass('active');
+  });
+
+  // service Accordion
+  $('.service-desc').eq(0).show()
+  $('.service-title').click(function() {
+    $(this).next().stop().slideDown();
+    $(this).parent().siblings().children('.service-desc').stop().slideUp();
+
+    $(this).parent().addClass('active');
+    $(this).parent().siblings().removeClass('active');
   });
 
 });
