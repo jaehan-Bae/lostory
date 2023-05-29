@@ -639,26 +639,21 @@ header {
 .service {
   height: 800px;
 }
-.common-title {
-}
 .service-inner {
-  padding: 0 50px;
+  padding: 0 100px;
 }
 .service-inner > div {
   float: left;
   width: 50%;
 }
-.service-left {}
-.service-boxes {}
 .service-box {
-  border: 1px solid #eee;
+  border: 1px solid #F5DADA;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
   cursor: pointer;
 }
 .service-title {
-  /* color: #F5DADA; */
   color: #f86874;
   font-size: 18px;
 }
@@ -671,3 +666,117 @@ header {
   margin-top: 15px;
   display: none;
 }
+.service-right {
+  padding-left: 50px;
+}
+.service-img {
+  width: 450px;
+  height: 300px;
+}
+.service-img img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: center;
+}
+.service-right h2 {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: -2px;
+  color: #f86874;
+}
+.service-right p {
+  font-size: 16px;
+  color: #444;
+}
+.service-btn {
+  text-align: center;
+  margin-top: 40px;
+}
+.service-btn button {
+  font-size: 18px;
+  color: #f86874;
+  padding: 12px 30px;
+  border: 1px solid #f86874;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: .3s;
+}
+.service-btn button:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: #f86874;
+}
+
+
+/* ====== Section: advertise ======  */
+.advertise {
+  height: 350px;
+  background-color: #ECECEC;
+}
+.advertise-inner {
+  padding: 20px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.advertise-left {
+  width: 50%;
+}
+.advertise-con {}
+.advertise-con h2 {
+  font-size: 34px;
+}
+.advertise-con span {}
+.advertise-con h4 {
+  color: #566286;
+  font-weight: bold;
+}
+.advertise-con p {}
+.advertise-btn {
+  padding: 8px 20px;
+  background-color: #566286;
+  border: 1px solid #566286;
+  display: inline-block;
+  color: #fff;
+  margin-top: 20px;
+  transition: .4s;
+}
+.advertise-btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #566286;
+  color: #566286;
+  font-weight: bold;
+}
+.advertise-right {}
+.advertise-right img {
+  width: 400px;
+}
+
+/* ====== Section: footer ======  */
+footer {
+  height: 250px;
+  background-color: #ebe5e6;
+  padding: 50px;
+}
+.footer-inner {
+  display: flex;
+}
+.footer-logo {}
+.footer-logo img {
+  width: 200px;
+  margin-right: 40px;
+}
+.footer-desc h3 {
+}
+.footer-desc h4 {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+  color: #777;
+}
+.footer-desc p {
+  padding-top: 20px;
+}
+

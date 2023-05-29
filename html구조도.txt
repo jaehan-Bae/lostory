@@ -90,3 +90,16 @@ section.event
           h2
           p
           .service-btn
+
+  .section.advertise
+    .advertise-inner
+      .advertise-left
+        .advertise-con > h2, span, p
+      .advertise-btn
+      .advertise-right
+        img
+
+  footer
+    .footer-inner
+    .footer-logo > img
+    p
