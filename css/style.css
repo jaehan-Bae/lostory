@@ -210,7 +210,6 @@ header {
 }
 
 .platform-btns {
-  /* padding-top: 20px; */
   padding-bottom: 30px;
 }
 
@@ -284,7 +283,6 @@ header {
 
 .best-slide .slick-prev:before,
 .best-slide .slick-next:before {
-  /* display: none; */
   color: #53513D;
   font-family: xeicon;
   opacity: 1;
@@ -301,25 +299,19 @@ header {
 }
 
 /* ====== Section: talk ======  */
-.talk {}
 .talk-inner {
   padding: 20px;
 }
-.talk-top {}
-.common-title {}
 .talk-bottom {
   display: flex;
   justify-content: center;
   justify-content: space-around;
 }
-.talk-left {}
-.talk-board {}
 .talk-s-title {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.talk-list {}
 .talk-list span {
   font-weight: bold;
   color: #f86874;
@@ -334,7 +326,6 @@ header {
 .talk-right {
   width: 60%;
 }
-.talk-s-title {}
 .talk-contents {
   display: flex;
 }
@@ -369,7 +360,6 @@ header {
   font-size: 16px;
   padding: 10px 0 20px 0;
 }
-.talk-con-bottom {}
 .talk-con-bottom p {
   margin-bottom: 10px;
 }
@@ -386,12 +376,6 @@ header {
 .gather {
   height: 650px;
   background-color: #ECECEC;
-}
-.gather-inner {
-}
-.gather-top {}
-.common-title {}
-.gather-bottom {
 }
 .gather-contents {
   display: flex;
@@ -523,9 +507,6 @@ header {
   cursor: pointer;
   margin-right: 20px;
 }
-.review-con:hover {
-  
-}
 .review-con:nth-child(3) {
   margin-right: none;
 }
@@ -594,7 +575,6 @@ header {
   float: left;
   margin-right: 100px;
 }
-.event-left h1 {}
 .event-tabs {
   display: flex;
   margin-top: 20px;
@@ -615,8 +595,6 @@ header {
   object-fit: cover;
   object-position: top;
   border-radius: 50%;
-}
-.event-tab p {
 }
 .event-desc {
   display: none;
@@ -724,16 +702,13 @@ header {
 .advertise-left {
   width: 50%;
 }
-.advertise-con {}
 .advertise-con h2 {
   font-size: 34px;
 }
-.advertise-con span {}
 .advertise-con h4 {
   color: #566286;
   font-weight: bold;
 }
-.advertise-con p {}
 .advertise-btn {
   padding: 8px 20px;
   background-color: #566286;
@@ -750,7 +725,6 @@ header {
   color: #566286;
   font-weight: bold;
 }
-.advertise-right {}
 .advertise-right img {
   width: 400px;
 }
@@ -764,12 +738,9 @@ footer {
 .footer-inner {
   display: flex;
 }
-.footer-logo {}
 .footer-logo img {
   width: 200px;
   margin-right: 40px;
-}
-.footer-desc h3 {
 }
 .footer-desc h4 {
   border-bottom: 1px solid #fff;
