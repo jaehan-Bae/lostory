@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,13 +26,13 @@
           <img src="./image/logo.png" alt="">
         </div>
         <div class="gnb">
-          <a href="#">플랫폼 인기작</a>
-          <a href="#">베스트셀러</a>
-          <a href="#">작품찾기</a>
-          <a href="#">소모임</a>
-          <a href="#">베스트리뷰</a>
-          <a href="#">클래스</a>
-          <a href="#">프리미엄</a>
+          <a href="#feature1">베스트셀러</a>
+          <a href="#feature2">작품찾기</a>
+          <a href="#feature3">플랫폼 인기작</a>
+          <a href="#feature4">베스트리뷰</a>
+          <a href="#feature5">소모임</a>
+          <a href="#feature6">커뮤니티</a>
+          <a href="#feature7">프리미엄</a>
         </div>
       </div>
     </header>
@@ -60,53 +59,14 @@
       </div>
     </section>
 
-    <!-- ################## Section: plaform ################## -->
-    <section>
-      <div class="platform">
-        <div class="platform-inner">
-          <div class="platform-top">
-            <div class="common-title">
-              <h1>✨플랫폼별 인기작✨</h1>
-            </div>
-          </div>
-          <div class="platform-bottom">
-            <div class="platform-btns">
-              <span class="active" data-alt="kakao">KAKAO</span>
-              <span data-alt="series">SERIES</span>
-              <span data-alt="ridi">RIDI</span>
-            </div>
-            <div class="platform-slide active" id="kakao">
-              <img src="./image/kakao/kakao1.jpg" alt="">
-              <img src="./image/kakao/kakao2.jpg" alt="">
-              <img src="./image/kakao/kakao3.jpg" alt="">
-              <img src="./image/kakao/kakao4.jpg" alt="">
-              <img src="./image/kakao/kakao5.jpg" alt="">
-            </div>
-            <div class="platform-slide" id="series">
-              <img src="./image/series/series.jpg" alt="">
-              <img src="./image/series/series2.jpeg" alt="">
-              <img src="./image/series/series3.jpg" alt="">
-              <img src="./image/series/series4.jpg" alt="">
-              <img src="./image/series/series5.jpg" alt="">
-            </div>
-            <div class="platform-slide" id="ridi">
-              <img src="./image/ridi/ridi1.jpg" alt="">
-              <img src="./image/ridi/ridi2.jpg" alt="">
-              <img src="./image/ridi/ridi3.jpg" alt="">
-              <img src="./image/ridi/ridi4.jpg" alt="">
-              <img src="./image/ridi/ridi5.jpg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ################## Section: best ################## -->
-    <section class="best">
+    <section class="best" id="feature1">
       <div class="best-inner">
         <div class="best-top">
           <div class="common-title">
-            <h1>✨로스토리 회원추천 베스트셀러✨</h1>
+            <h1>로스토리 회원추천 베스트셀러</h1>
+            <div class="common-line"></div>
+            <p class="common-desc">로스토리 회원이 꼽은 추천작품!</p>
           </div>
         </div>
         <div class="best-bottom">
@@ -128,11 +88,13 @@
     </section>
 
     <!-- ################## Section: talk ################## -->
-    <section class="talk">
+    <section class="talk" id="feature2">
       <div class="talk-inner">
         <div class="talk-top">
           <div class="common-title">
-            <h1>🔎이런 작품을 찾습니다🔎</h1>
+            <h1>이런 작품을 찾습니다</h1>
+            <div class="common-line"></div>
+            <p class="common-desc">작품 이야기 나누는 공간</p>
           </div>
         </div>
         <div class="talk-bottom">
@@ -183,7 +145,8 @@
                   </div>
                   <div class="talk-con-bottom">
                     <p>
-                      8년차 기성인데, 이제는 어느정도 자리잡은 것 같아. 나는 여성향 전장르를 쓰고 장편 1n종, 단권 1n종, 초단편 3n종 냈어. 이제껏 숨만 쉬고 글만 쓴듯 ㅋㅋ 질문 받을게.
+                      8년차 기성인데, 이제는 어느정도 자리잡은 것 같아. 나는 여성향 전장르를 쓰고 장편 1n종, 단권 1n종, 초단편 3n종 냈어. 이제껏 숨만 쉬고 글만 쓴듯 ㅋㅋ 질문
+                      받을게.
                     </p>
                     <small>추천 <span>570</span> 반대 <span>34</span></small>
                   </div>
@@ -195,60 +158,55 @@
       </div>
     </section>
 
-    <!-- ################## Section: gather ################## -->
-    <section class="gather">
-      <div class="gather-inner">
-        <div class="gather-top">
+    <!-- ################## Section: plaform ################## -->
+    <section class="platform" id="feature3">
+      <div class="platform-inner">
+        <div class="platform-top">
           <div class="common-title">
-            <h1>🌺로스토리 소모임🌺</h1>
+            <h1>플랫폼별 인기작</h1>
+            <div class="common-line"></div>
+            <p class="common-desc">카카오, 시리즈, 리디 인기작을 알려드립니다.</p>
           </div>
         </div>
-        <div class="gather-bottom">
-          <div class="gather-contents">
-            <div class="gather-con">
-              <div class="gather-img">
-                <img src="./image/gather1.jpg" alt="">
-              </div>
-              <div class="gather-title">개망나니 여주를 찾아서</div>
-              <div class="gather-desc">
-                <div class="gather-s-title">일편단심 개망나니 여주만 먹습니다!
-                </div>
-                <div class="gather-hash">#양아치여주 #개아가여주 #능력녀 #우월녀</div>
-              </div>
-            </div>
-            <div class="gather-con">
-              <div class="gather-img">
-                <img src="./image/gather2.jpg" alt="">
-              </div>
-              <div class="gather-title">세계 최후의 마이너 모임</div>
-              <div class="gather-desc">
-                <div class="gather-s-title">세상에 이런 마이너는 없었다. <br>
-                  주변에 말못할 취향을 가진 자들의 모임                
-                </div>
-                <div class="gather-hash">#한줌단 #고수위 #마이너절대지켜</div>
-              </div>
-            </div>
-            <div class="gather-con">
-              <div class="gather-img">
-                <img src="./image/gather3.jpg" alt="">
-              </div>
-              <div class="gather-title">구파일방 로맨스</div>
-              <div class="gather-desc">
-                <div class="gather-s-title">무협 로맨스 없어서 만들어 먹습니다.</div>
-                <div class="gather-hash">#2차창작환영 #현대문물금지 #동양풍</div>
-              </div>
-            </div>
+        <div class="platform-bottom">
+          <div class="platform-btns">
+            <span class="active" data-alt="kakao">KAKAO</span>
+            <span data-alt="series">SERIES</span>
+            <span data-alt="ridi">RIDI</span>
+          </div>
+          <div class="platform-slide active" id="kakao">
+            <img src="./image/kakao/kakao1.jpg" alt="">
+            <img src="./image/kakao/kakao2.jpg" alt="">
+            <img src="./image/kakao/kakao3.jpg" alt="">
+            <img src="./image/kakao/kakao4.jpg" alt="">
+            <img src="./image/kakao/kakao5.jpg" alt="">
+          </div>
+          <div class="platform-slide" id="series">
+            <img src="./image/series/series.jpg" alt="">
+            <img src="./image/series/series2.jpeg" alt="">
+            <img src="./image/series/series3.jpg" alt="">
+            <img src="./image/series/series4.jpg" alt="">
+            <img src="./image/series/series5.jpg" alt="">
+          </div>
+          <div class="platform-slide" id="ridi">
+            <img src="./image/ridi/ridi1.jpg" alt="">
+            <img src="./image/ridi/ridi2.jpg" alt="">
+            <img src="./image/ridi/ridi3.jpg" alt="">
+            <img src="./image/ridi/ridi4.jpg" alt="">
+            <img src="./image/ridi/ridi5.jpg" alt="">
           </div>
         </div>
       </div>
     </section>
-    
+
     <!-- ################## Section: review ################## -->
-    <section class="review">
+    <section class="review" id="feature4">
       <div class="review-inner">
         <div class="review-top">
           <div class="common-title">
-            <h1>📃베스트 리뷰📃</h1>
+            <h1>베스트 리뷰</h1>
+            <div class="common-line"></div>
+            <p class="common-desc">이번달 선정된 회원 베스트리뷰</p>
           </div>
         </div>
         <div class="review-left">
@@ -261,7 +219,7 @@
                   그들 앞에 배턴터치가 찾아간다.
                   청년들이 은둔생활로 쌓아놓은 쓰레기는 물론, 마음의 쓰레기까지 모두 수거해간다.
                   과거의 상처로 오래 은둔했기에, 청년들의 상처를 깊이 공감하는 신소리.</p>
-                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -302,34 +260,58 @@
       </div>
     </section>
 
-    <!-- ################## Section: advertise ################## -->
-    <section class="advertise">
-      <div class="advertise-inner">
-        <div class="advertise-left">
-          <div class="advertise-con">
-            <h2>Who’s Next?</h2>
-            <span>
-              다음 신작 주인공을 맞히고
-              플랫폼 캐시 무료로 챙겨가세요!
-            </span>
-            <h4>여러분을 기다리는 차기 남주는 누구일까요?</h4><br>
-            <p>
-              참여만 해도 플랫폼 캐시 500원을, <br>
-              정답을 맞히신 분들께는 추첨을 통해 <br>
-              플랫폼 캐시 50,000원을 드립니다 (매달 한 분 선정)
-            </p>
+    <!-- ################## Section: gather ################## -->
+    <section class="gather" id="feature5">
+      <div class="gather-inner">
+        <div class="gather-top">
+          <div class="common-title">
+            <h1>로스토리 소모임</h1>
+            <div class="common-line"></div>
+            <p class="common-desc">같은 취향 함께 공유해요</p>
           </div>
-          <div class="advertise-btn">정답 맞히러 가기</div>
         </div>
-        <div class="advertise-right">
-          <img src="./image/card.gif" alt="">
+        <div class="gather-bottom">
+          <div class="gather-contents">
+            <div class="gather-con">
+              <div class="gather-img">
+                <img src="./image/gather1.jpg" alt="">
+              </div>
+              <div class="gather-title">개망나니 여주를 찾아서</div>
+              <div class="gather-desc">
+                <div class="gather-s-title">일편단심 개망나니 여주만 먹습니다!
+                </div>
+                <div class="gather-hash">#양아치여주 #개아가여주 #능력녀 #우월녀</div>
+              </div>
+            </div>
+            <div class="gather-con">
+              <div class="gather-img">
+                <img src="./image/gather2.jpg" alt="">
+              </div>
+              <div class="gather-title">세계 최후의 마이너 모임</div>
+              <div class="gather-desc">
+                <div class="gather-s-title">세상에 이런 마이너는 없었다. <br>
+                  주변에 말못할 취향을 가진 자들의 모임
+                </div>
+                <div class="gather-hash">#한줌단 #고수위 #마이너절대지켜</div>
+              </div>
+            </div>
+            <div class="gather-con">
+              <div class="gather-img">
+                <img src="./image/gather3.jpg" alt="">
+              </div>
+              <div class="gather-title">구파일방 로맨스</div>
+              <div class="gather-desc">
+                <div class="gather-s-title">무협 로맨스 없어서 만들어 먹습니다.</div>
+                <div class="gather-hash">#2차창작환영 #현대문물금지 #동양풍</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-
     <!-- ################## Section: community ################## -->
-    <section class="community">
+    <section class="community" id="feature6">
       <div class="community-inner">
         <div class="community-left">
           <div class="community-title">
@@ -354,8 +336,8 @@
         </div>
       </div>
     </section>
-    
-    
+
+
     <!-- ################## Section: event ################## -->
     <section class="event">
       <div class="event-inner">
@@ -393,11 +375,12 @@
         </div>
       </div>
     </section>
-    
+
     <!-- ################## Section: service ################## -->
-    <section class="service">
+    <section class="service" id="feature7">
       <div class="common-title">
         <h1>로스토리 프리미엄 서비스 이용이 궁금하신가요? </h1>
+        <div class="common-line"></div>
       </div>
       <div class="service-inner">
         <div class="service-left">
@@ -429,7 +412,7 @@
               <div class="service-desc">
                 로스토리 회원정보를 변경하기 위해서 로그인 후 [회원정보]에서 회원정보를 조회하거나 변경하실 수 있습니다.
                 회원정보 변경 방법은 아래와 같습니다. (단, 아이디는 수정하실 수 없습니다.)
-                
+
                 ① [회원정보] 페이지 > 현재 사용중인 비밀번호 입력
                 ② [정보수정] 버튼을 클릭합니다.
               </div>
@@ -461,6 +444,31 @@
       </div>
     </section>
 
+    <!-- ################## Section: advertise ################## -->
+    <section class="advertise">
+      <div class="advertise-inner">
+        <div class="advertise-left">
+          <div class="advertise-con">
+            <h2>Who’s Next?</h2>
+            <span>
+              다음 신작 주인공을 맞히고
+              플랫폼 캐시 무료로 챙겨가세요!
+            </span>
+            <h4>여러분을 기다리는 차기 남주는 누구일까요?</h4><br>
+            <p>
+              참여만 해도 플랫폼 캐시 500원을, <br>
+              정답을 맞히신 분들께는 추첨을 통해 <br>
+              플랫폼 캐시 50,000원을 드립니다 (매달 한 분 선정)
+            </p>
+          </div>
+          <div class="advertise-btn">정답 맞히러 가기</div>
+        </div>
+        <div class="advertise-right">
+          <img src="./image/card.gif" alt="">
+        </div>
+      </div>
+    </section>
+
     <!-- ################## Section: footer ################## -->
     <footer>
       <div class="footer-inner">
@@ -473,16 +481,20 @@
           </h4>
           <p>
             대표자 | 김승연 | 사업자 등록번호 | 120-87-273333 | 통신판매업 신고번호 | 제 2009-부산수영 35-021333호
-            | 이메일 yoosurang@kakao.com | 대표전화 | 010-7791-7232 | 
+            | 이메일 yoosurang@kakao.com | 대표전화 | 010-7791-7232 |
           </p>
           <p>
-            주소 | 부산시 수영구 광남로 172번길 | 
+            주소 | 부산시 수영구 광남로 172번길 |
             이용약관 | 개인정보 처리방침 | 청소년보호정책 | 사업자정보확인
           </p>
-    </div>
-    </div>
+        </div>
+      </div>
     </footer>
 
+    <!-- ################## Section: goto ################## -->
+    <a class="goto" href="#">
+      <i class="xi-angle-up-thin"></i>
+    </a>
   </div>
 </body>
 
