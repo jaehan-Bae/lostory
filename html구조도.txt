@@ -1,48 +1,63 @@
 header
   .header-inner
+    .logo > img
     .gnb > (a * 7)
 
 section.welcome
   .welcome-inner
-    .welcome-img
-      .welcome-title
-
-section.platform
-  .platform-inner
-    .platform-top
-      .common-title
-    .platform-bottom
-      .platform-btns > (span * 3)
-      .platform-slide > (img * 5)
+    .welcome-img > img
+      .welcome-title > span, h1, h4, p, button
 
 section.best
   .best-inner
     .best-top
-      .common-title
+      .common-title > h1, common-line, common-desc
     .best-bottom
       .best-slide > (img * 11)
 
 section.talk
   .talk-inner
     .talk-top
-      .common-title
+      .common-title > h1, common-line, common-desc
     .talk-bottom
       .talk-left
         .talk-board
           .talk-s-title
-          .talk-list > (a*8)
-
+          .talk-list > (p*8)
       .talk-right
         .talk-s-title
-        .talk-con
-          .talk-con-inner
-            .talk-con-top > img, span
-            .talk-con-bottom > p, span
+        .talk-contents
+          .talk-con
+            .talk-con-inner
+              .talk-con-top > img, span
+              .talk-con-bottom > p, small
+
+section.platform
+  .platform-inner
+    .platform-top
+      .common-title > h1, common-line, common-desc
+    .platform-bottom
+      .platform-btns > (span * 3)
+      .platform-slide > (img * 5)
+
+section.review
+  .review-inner
+    .review-top
+      .common-title > h1, common-line, common-desc
+    .review-left
+      .review-content
+        .review-b-img > img
+          .review-b-title
+      .review-right
+        .review-contents
+          .review-con
+            .review-s-img > img > span
+            .review-s-title
 
 section.gather
   .gather-inner
     .gather-top
-      .common-title
+      .common-title > h1, common-line, common-desc
     .gather-bottom
       .gather-contents
         .gather-con
@@ -51,34 +66,25 @@ section.gather
           .gather-s-title
           .gather-hash
 
-section.review
-  .review-inner
-    .review-left
-      .review-b-img > img
-        .review-b-title
-    .review-right
-      .review-s-img > img > span
-      .review-s-title
-
 section.community
   .community-inner
     .community-left
-      .community-title
-      .community-desc
+      .community-title > span
+      .community-desc > p
       .community-btn > (img*2)
     .community-right > img
 
 section.event
   .event-inner
     .event-left
-      h1
       .event-tabs
         .event-tab > img,p
     .event-right
-      .event-desc > h2,p
+      .event-contents
+        .event-desc > h2,p
 
   .section.service
-    .common-title
+    .common-title > h1, .common-line
     .service-inner
       .service-left
         .service-boxes
@@ -89,17 +95,16 @@ section.event
         .service-img > img
           h2
           p
-          .service-btn
+          .service-btn > button
 
   .section.advertise
     .advertise-inner
       .advertise-left
-        .advertise-con > h2, span, p
+        .advertise-con > h2, span, h4, p
       .advertise-btn
-      .advertise-right
-        img
+      .advertise-right > img
 
   footer
     .footer-inner
     .footer-logo > img
-    p
+    .footer-desc > h3, h4, p

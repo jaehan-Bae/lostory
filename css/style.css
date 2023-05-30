@@ -6,10 +6,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&display=swap');
 /* Web Fonts - Source Sans Pro */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
-/* Web Fonts - NanumSquareRound */
-@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
-/* Regular(400), Bold(700), Extra Bold(800), Light(300) */
-/* Web Fonts - MICEGothic Bold */
 @font-face {
   font-family: 'MICEGothic Bold';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
@@ -52,9 +48,6 @@ body:not(.eng) {
 }
 body.active {
   overflow: hidden;
-}
-.eng {
-  font-family: 'Carter One', cursive;
 }
 
 /* Common Css */
