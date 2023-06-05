@@ -1,7 +1,7 @@
 $(function () {
   /* Header Scroll Change */
   $(window).scroll(function() {
-    if($(window).scrollTop() > 50) {
+    if($(window).scrollTop() > 60) {
       $('.goto').addClass('active');
     } else {
       $('.goto').removeClass('acitve');
@@ -33,7 +33,14 @@ $(function () {
     slidesToShow: 8,
     autoplay:true,
     autoplaySpeed: 2000,
-    responsive: true
+    responsive: [
+    {  
+      breakpoint: 960,
+      settings: {
+        slidesToShow: 4
+      } 
+    }
+  ]
   });
 
   // event-tab
