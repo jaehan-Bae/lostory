@@ -37,7 +37,13 @@ $(function () {
     {  
       breakpoint: 960,
       settings: {
-        slidesToShow: 4
+        slidesToShow: 5
+      } 
+    },
+    { 
+      breakpoint: 468,
+      settings: {	
+        slidesToShow: 4 
       } 
     }
   ]
@@ -60,6 +66,15 @@ $(function () {
 
     $(this).parent().addClass('active');
     $(this).parent().siblings().removeClass('active');
+  });
+
+  // trigger
+  $('.trigger').click(function(){
+    $(this).toggleClass('active');
+    $('.gnb').toggleClass('active');
+  });
+  $('.gnb a, section').click(function() {
+    $('.gnb, .trigger').removeClass('active');
   });
 });
 

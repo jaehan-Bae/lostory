@@ -5,9 +5,23 @@
   .common-title h1 {
     font-size: 6vw;
   }
-  .talk, .platform, .review, .gather, .community, .event, .service, .advertise, footer {
+  .common-desc {
+    font-size: 2.7vw;
+  }
+  .talk,
+  .platform,
+  .review,
+  .gather,
+  .community,
+  .event,
+  .service,
+  .advertise,
+  footer {
     height: auto;
     width: 100%;
+  }
+  .welcome {
+    height: 550px;
   }
   .welcome-inner {
     width: 100%;
@@ -24,31 +38,59 @@
     display: none;
   }
   .welcome-title span {
-    font-size: 5.1vw;
+    font-size: 4.3vw;
   }
   .welcome-title h1 {
-    font-size: 12.8vw;
+    font-size: 12vw;
   }
   .welcome-title h4 {
-    font-size: 3.4vw;
+    font-size: 3vw;
   }
   .welcome-title p {
-    font-size: 4vw;
+    font-size: 3.5vw;
+    margin-top: 10px;
   }
   .welcome-title button {
     display: inline-block;
   }
   .gnb {
-    position: absolute;
-    left: -450px;
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 250px;
+    right: -480px;
     height: 100vh;
     z-index: 9999;
     background-color: #e5ebeb;
+    padding-top: 70px;
+    padding-left: 30px;
+    margin: 0;
+  }
+  .gnb.active {
+    left: 0px;
   }
   .gnb a {
     display: none;
     display: block;
     margin-right: 0;
+    line-height: 2em;
+  }
+  .trigger {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    font-size: 28px;
+    z-index: 10000;
+  }
+  .trigger::before {
+    content: '\e91c';
+    font-family: xeicon;
+  }
+  .trigger.active::before {
+    content: '\e9af';
+    z-index: 10000;
   }
   .header-inner,
   .welcome-inner,
@@ -63,8 +105,6 @@
   .talk-con:last-child {
     margin-right: 0px;
   }
-  .talk-inner {
-  }
   .talk-bottom {
     display: block;
   }
@@ -77,10 +117,13 @@
   .talk-bottom {
     padding-bottom: 30px;
   }
-
   .best-slide .slick-prev:before,
   .best-slide .slick-next:before {
     display: none;
+  }
+  .slick-prev, .slick-next {
+    display: none;
+    visibility: hidden;
   }
   .platform-slide img:last-child {
     display: none;
@@ -91,36 +134,31 @@
   }
   .best-slide img {
     margin-right: 3px;
+    height: 180px;
   }
   .review-left {
     float: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .review-right {
-    margin-left: 0px;
+    margin-left: 20px;
     padding-bottom: 30px;
   }
   .review-content {
     margin-bottom: 30px;
   }
-  .review-con:last-child {
-    display: none;
-  }
   .review-con {
-    width: 45%;
     margin-right: 0px;
-  }
-  .review-con:nth-child(1) {
-    margin-right: 20px;
   }
   .review-s-title {
     height: auto;
   }
-  .gather {
-  }
   .gather-contents {
     display: block;
   }
-  .gather-contents > div {
+  .gather-contents>div {
     text-align: center;
     margin: auto;
   }
@@ -130,10 +168,6 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
-  }
-  .gather-img > img {
-  }
-  .community {
   }
   .community-inner {
     margin: 30px;
@@ -147,8 +181,14 @@
   .community-right {
     text-align: center;
   }
-  .community-desc > p {
+  .community-desc>p {
     width: 70%;
+  }
+  .community-title {
+    font-size: 7vw;
+  }
+  .community-title > p {
+    font-size: 2vw;
   }
   .event-inner {
     display: flex;
@@ -158,15 +198,16 @@
   }
   .event-left {
     float: none;
+    margin-right: 0;
   }
   .event-tabs {
     width: 100%;
   }
   .event-tab {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
   }
-  .event-tab > p{
+  .event-tab>p {
     display: none;
   }
   .event-desc h2 {
@@ -175,7 +216,7 @@
   .service-inner {
     padding: 20px;
   }
-  .service-inner > div {
+  .service-inner>div {
     float: none;
     width: 100%;
   }
@@ -195,8 +236,8 @@
   .advertise-right {
     display: none;
   }
-  .footer {
-    padding: 20px;
+  footer {
+    padding: 40px;
   }
   .footer-inner {
     display: inline-block;
@@ -205,8 +246,10 @@
     width: 40%;
     margin-right: 10px;
   }
+
   .footer-logo {
     display: inline-block;
+    width: 100%;
   }
   .footer-logo img {
     float: left;
@@ -214,5 +257,58 @@
   .goto {
     display: none;
     visibility: hidden;
+  }
+}
+
+@media (max-width: 468px) {
+  .common-title h1 {
+    font-size: 5vw;
+  }
+  .welcome {
+    height: 430px;
+  }
+  .logo {
+    padding-top: 30px;
+  }
+  .welcome-title span {
+    font-size: 5.1vw;
+  }
+  .welcome-title h1 {
+    font-size: 12.8vw;
+  }
+  .welcome-title h4 {
+    font-size: 3.4vw;
+  }
+  .welcome-title p {
+    font-size: 4vw;
+  }
+  .best-slide img {
+    margin-right: 3px;
+  }
+  .review-right {
+    margin-left: 0px;
+    padding-bottom: 30px;
+  }
+  .review-contents {
+    display: flex;
+  }
+  .review-content {
+    margin-bottom: 30px;
+  }
+  .review-con:last-child {
+    display: none;
+  }
+  .review-con {
+    width: 45%;
+    margin-right: 0px;
+  }
+  .review-con:nth-child(1) {
+    margin-right: 20px;
+  }
+  .review-s-title {
+    height: auto;
+  }
+  .community-btn > img {
+    width: 155px;
   }
 }

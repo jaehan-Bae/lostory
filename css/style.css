@@ -524,7 +524,7 @@ header {
 }
 .community-desc {
   font-size: 18px;
-  width: 600px;
+  width: 100%;
   line-height: 1.7em;
   color: #333333;
   margin: 20px 0;
